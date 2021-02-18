@@ -14,6 +14,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Node JS, Express and Azure SQL Application." });
 });
 
+app.get("/exceptionType1", (req, res) => {
+  res.json({ message: "Welcome to Node JS, Express and Azure SQL Application. type1" });
+});
+
 require("./app/routes/routes.js")(app);
 
 // set port, listen for requests
